@@ -1,0 +1,41 @@
+# Global Property
+title-text: ""
+desktop-image: "background.png"
+terminal-font: "unifont Regular 16"
+terminal-left: "0"
+terminal-top: "0"
+terminal-width: "100%"
+terminal-height: "100%"
+terminal-border: "0"
+
++ boot_menu {
+  left = 10%
+  top = 10%
+  width = 80%
+  height = 80%
+
+  item_color = "#cccccc"
+  item_font = "DejaVu Sans Regular 24"
+  item_height = 100
+  item_spacing = 10
+  item_icon_space = 30
+
+  icon_width = 100
+  icon_height = 100
+
+  selected_item_font = "DejaVu Sans Regular 24"
+  selected_item_color = "#333333"
+  selected_item_pixmap_style = "selected_*.png"
+}
+
++ progress_bar {
+  id = "__timeout__"
+
+  left = 0%
+  top = 100%-16
+  width = 100%
+  height = 16
+
+  bar_style = "progress_*.png"
+  highlight_style = "progress_hl_*.png"
+}
