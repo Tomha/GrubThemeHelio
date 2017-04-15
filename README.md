@@ -11,7 +11,7 @@ To install the theme, place the "helio" folder in the GRUB themes folder, usuall
     sudo cp -r GrubThemeHelio/helio /boot/grub/themes/
 
 **Activating the Theme:**
-To use the theme, set the `GRUB_THEME` line in the GRUB config file, usually located at `/etc/default/grub`, e.g.: `GRUB_THEME=/boot/grub/theme/helio/theme.txt`.
+To use the theme, set the `GRUB_THEME` line in the GRUB config file, usually located at `/etc/default/grub`, e.g.: `GRUB_THEME=/boot/grub/theme/helio/theme.txt`. Then regenerate the GRUB config file: `sudo grub-mkconfig -o /boot/grub/grub.cfg`.
 
 **Low Resolution Fix:**
 If GRUB defaults to a very low resolution you can try forcing a higher resolution for a better apperance, and to fit more entries on the screen without having to scroll.
